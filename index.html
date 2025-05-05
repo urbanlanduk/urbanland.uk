@@ -5,34 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Urban Land | Project Portal</title>
   <style>
-    body {
-      font-family: Helvetica, Arial, sans-serif;
-      background-color: #ffffff;
-      color: #002244;
-      margin: 0;
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: justify;
-      min-height: 100vh; /* this ensures full-height layout */
-    }
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #002244;
+  margin: 0;
+  padding: 0;              /* remove top padding */
+  padding-top: 1rem;       /* control top spacing precisely */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;     /* center logo horizontally */
+  text-align: center;
+}
  <style>
 .logo {
   max-width: 240px;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;   /* reduce bottom gap under logo */
 }
 
   h1 {
     font-size: 2rem;
     margin-bottom: 0.2rem;
   }
-    .tagline {
-      font-size: 2.5rem;
-      font-weight: 300;
-      color: #333;
-      margin-bottom: 1.5rem;
-    }
+   .tagline {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #333;
+  margin-top: 0;           /* reduce top gap above tagline */
+  margin-bottom: 1.5rem;
+}
     .welcome p {
       text-align: center;
     }
