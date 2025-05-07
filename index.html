@@ -117,22 +117,21 @@ body {
   </footer>
 
   <!-- REDIRECT SCRIPT -->
-  <script>
-    function goToProject() {
-      const code = document.getElementById("projectCode").value.trim().toLowerCase();
-      const projects = {
-        "dur2026": "https://yourcompany.sharepoint.com/sites/DurhamResi",
-        "york-mix": "https://yourcompany.sharepoint.com/sites/YorkMixedUse"
-        // Add more codes and SharePoint URLs as needed
-      };
+ <script>
+  function checkCode() {
+    const input = document.getElementById('code').value.trim().toLowerCase();
 
-      if (projects[code]) {
-        window.location.href = projects[code];
-      } else {
-        alert("Project code not found. Please check and try again.");
-      }
+    const projects = {
+      "aln2025": "https://urbanland.uk/alnwick-brochure.pdf"
+    };
+
+    if (projects[input]) {
+      window.open(projects[input], "_blank");
+    } else {
+      alert("Invalid code. Please try again.");
     }
-  </script>
+  }
+</script>
 
 </body>
 </html>
