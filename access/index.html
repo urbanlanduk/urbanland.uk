@@ -26,10 +26,16 @@
   </form>
   <script>
     function checkCode() {
-      const input = document.getElementById('code').value.trim();
-      // if (input === "Aln2025") {
-//   window.open("https://groundstudio-my.sharepoint.com/...", "_blank");
-// } else {
+      const input = document.getElementById('code').value.trim().toLowerCase();
+
+      const projects = {
+        // "aln2025": "https://groundstudio-my.sharepoint.com/:b:/g/personal/mike_gilfillan_groundstudio_co_uk/EXe5lCPjiW9KnRnO5wWsuqMBXuMrwvFik-FznkuKGisB6A?e=dJqc6t",
+        // "kelso2025": "https://your-other-project-link.pdf"
+      };
+
+      if (projects[input]) {
+        window.open(projects[input], "_blank");
+      } else {
         alert("Invalid code. Please try again.");
       }
     }
