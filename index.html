@@ -118,12 +118,15 @@ body {
 
   <!-- REDIRECT SCRIPT -->
 <script>
-  function checkCode() {
-    const input = document.getElementById('code').value.trim().toLowerCase();
+  function goToProject() {
+    const input = document.getElementById('projectCode').value.trim().toLowerCase();
 
     const projects = {
       "aln2025": "https://urbanland.uk/alnwick-brochure.pdf"
+      // Add more here, like:
+      // "kelso2025": "https://urbanland.uk/kelso-brochure.pdf"
     };
+
     if (projects[input]) {
       window.open(projects[input], "_blank");
     } else {
