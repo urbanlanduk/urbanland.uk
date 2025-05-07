@@ -117,14 +117,13 @@ body {
   </footer>
 
   <!-- REDIRECT SCRIPT -->
- <script>
+<script>
   function checkCode() {
     const input = document.getElementById('code').value.trim().toLowerCase();
 
     const projects = {
       "aln2025": "https://urbanland.uk/alnwick-brochure.pdf"
     };
-
     if (projects[input]) {
       window.open(projects[input], "_blank");
     } else {
@@ -132,6 +131,5 @@ body {
     }
   }
 </script>
-
 </body>
 </html>
